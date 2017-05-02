@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+</head>
+
+
+
+
+<body>
+
+
+<p>The set of residuals for the RO system are as follows.</p>
+
+<p><img src="http://latex.codecogs.com/gif.latex?r_{RO1_1}: \\
+  \hat{R}_{memb_{11}} =0.202 (4.137*10^{11}(\frac{\hat{e}_{Ck_{11}}-12000}{165}+29)) \\
+  \dot{\hat{p}}_{memb_{11}} = \frac{1}{{C_{memb}}} ( \hat{q}_{rp_{11}} - \frac{\hat{p}_{memb_{11}}}{\hat{R}_{memb_{11}}}  - \frac{\hat{p}_{memb_{11}} -  \hat{p}_{tr_{11}}}{R_{return_l}} ) \\
+  \dot{\hat{p}}_{tr_{11}} =  \frac{1}{C_{tr}} (   y_3  - \hat{q}_{rp_{11}} +\frac{ \hat{p}_{memb_{11}}-\hat{p}_{tr_{11}}}{R_{return_l}})\\  
+  \dot{\hat{q}}_{rp_{11}} = \frac{1}{I_{rp}}  (- R_{rp}  \hat{q}_{rp_{11}} - R_{forward}	 \hat{q}_{rp_{11}}- \hat{p}_{memb_{11}} + u_2) \\ 
+  \dot{\hat{e}}_{Cbrine_{11}} = 
+  \frac{1}{1.667 * 10^{-8} C_{brine}  } (
+  \frac{ \hat{p}_{memb_{11}} - \hat{p}_{tr_{11}}}{  R_{return_l}  } 
+  )  \\ 
+  \dot{\hat{e}}_{Ck_{11}}= \frac{\hat{q}_{rp_{11}}}{C_k}(6 \hat{e}_{Cbrine_{11}}+0.1)/(1.667*10^{-8}) \\
+  r_{RO1_1} = y_1 - \hat{p}_{tr_{11}}" border="0"/></p>
+
+
+
+<p><img src="http://latex.codecogs.com/gif.latex?r_{RO1_2}: \\
+    \hat{R}_{memb_{12}} =0.202 (4.137*10^{11}(\frac{y_5-12000}{165}+29)) \\
+    \hat{q}_{rp_{12}} = \frac{1.667*10^{-8}}{6 \hat{e}_{Cbrine_{12}}+0.1}
+    C_k \dot{y}_{5} \\  
+    \hat{p}_{tr_{12}} = -I_{fp}\dot{y_3} -R_{fp}y_3 +u_1 \\
+    \dot{\hat{p}}_{memb_{12}} = \frac{1}{{C_{memb}}} ( \hat{q}_{rp_{12}} - \frac{\hat{p}_{memb_{12}}}{\hat{R}_{memb_{12}}}  - \frac{\hat{p}_{memb_{12}} -  \hat{p}_{tr_{12}}}{R_{return_l}}  ) \\
+    \dot{\hat{e}}_{Cbrine_{12}} = 
+    \frac{1}{1.667 * 10^{-8} C_{brine}  } (
+    \frac{ \hat{p}_{memb_{12}} - \hat{p}_{tr_{12}}}{  R_{return_l}  } 
+    )  \\
+    r_{RO1_2} = y_2 - \hat{p}_{memb_{12}}" border="0"/></p>
+
+
+<p><img src="http://latex.codecogs.com/gif.latex?r_{RO1_3}: \\
+      \hat{p}_{tr_{13}} = -I_{fp}\dot{y_3} -R_{fp}y_3 +u_1 \\   
+      \hat{p}_{memb_{13}} =  \hat{p}_{tr_{13}} + 1.667 * 10^{-8} C_{brine}  R_{return_l}  \dot{y_4} \\   
+      \dot{\hat{q}}_{rp_{13}} = \frac{1}{I_{rp}}  (- R_{rp}  \hat{q}_{rp_{13}} - R_{forward}	 \hat{q}_{rp_{13}}- \hat{p}_{memb_{13}} + u_2) \\  
+      \dot{\hat{e}}_{Ck_{13}}= \frac{\hat{q}_{rp_{13}}}{C_k}(6 y_4 +0.1)/(1.667*10^{-8}) \\
+      r_{RO1_3} = y_5 -  \hat{e}_{Ck_{13}}" border="0"/></p>
+
+
+
+<p><img src="http://latex.codecogs.com/gif.latex?r_{RO2_1}: \\
+  \hat{R}_{memb_{21}} =0.202 (4.137*10^{11}(\frac{\hat{e}_{Ck_{21}}-12000}{165}+29)) \\
+   \dot{\hat{p}}_{memb_{21}} = \frac{1}{{C_{memb}}} ( \hat{q}_{rp_{21}} - \frac{\hat{p}_{memb_{21}}}{\hat{R}_{memb_{21}}}  - \frac{\hat{p}_{memb_{21}} -  \hat{p}_{tr_{21}}}{R_{return_s}} ) \\
+  \dot{\hat{p}}_{tr_{21}} =  \frac{1}{C_{tr}} (   y_3  - \hat{q}_{rp_{21}} +\frac{ \hat{p}_{memb_{21}}-\hat{p}_{tr_{21}}}{R_{return_s}})\\
+  \dot{\hat{q}}_{rp_{21}} = \frac{1}{I_{rp}}  (- R_{rp}  \hat{q}_{rp_{21}} - R_{forward}	 \hat{q}_{rp_{21}}- \hat{p}_{memb_{21}} + u_2) \\
+ \dot{\hat{e}}_{Cbrine_{21}} = 
+  \frac{1}{1.667 * 10^{-8} C_{brine}  } (
+   \frac{ \hat{p}_{memb_{21}} - \hat{p}_{tr_{21}}}{  R_{return_s}  } 
+ )  \\
+  \dot{\hat{e}}_{Ck_{21}}= \frac{\hat{q}_{rp_{21}}}{C_k}(6 \hat{e}_{Cbrine_{21}}+0.1)/(1.667*10^{-8}) \\
+  r_{RO2_1} = y_1 - \hat{p}_{tr_{21}} \\" border="0"/></p>
+
+
+
+<p><img src="http://latex.codecogs.com/gif.latex?r_{RO2_2}: \\
+  \hat{R}_{memb_{22}} =0.202 (4.137*10^{11}(\frac{y_5-12000}{165}+29)) \\
+  \hat{q}_{rp_{22}} = \frac{1.667*10^{-8}}{6 \hat{e}_{Cbrine_{22}}+0.1}
+   C_k \dot{y}_{5} \\
+ \hat{p}_{tr_{22}} = -I_{fp}\dot{y_3} -R_{fp}y_3 +u_1 \\
+  \dot{\hat{p}}_{memb_{22}} = \frac{1}{{C_{memb}}} ( \hat{q}_{rp_{22}} - \frac{\hat{p}_{memb_{22}}}{\hat{R}_{memb_{22}}}  - \frac{\hat{p}_{memb_{22}} -  \hat{p}_{tr_{22}}}{R_{return_s}}  ) \\
+    \dot{\hat{e}}_{Cbrine_{22}} = 
+    \frac{1}{1.667 * 10^{-8} C_{brine}  } (
+    \frac{ \hat{p}_{memb_{22}} - \hat{p}_{tr_{22}}}{  R_{return_s}  } 
+    )  \\
+  r_{RO2_2} = y_2 - \hat{p}_{memb_{22}}\\" border="0"/></p>
+
+
+
+<p><img src="http://latex.codecogs.com/gif.latex?r_{RO2_3}: \\
+    \hat{p}_{tr_{23}} = -I_{fp}\dot{y_3} -R_{fp}y_3 +u_1 \\   
+    \hat{p}_{memb_{23}} =  \hat{p}_{tr_{23}} + 1.667 * 10^{-8} C_{brine}  R_{return_s}  \dot{y_4} \\   
+    \dot{\hat{q}}_{rp_{23}} = \frac{1}{I_{rp}}  (- R_{rp}  \hat{q}_{rp_{23}} - R_{forward}	 \hat{q}_{rp_{23}}- \hat{p}_{memb_{23}} + u_2) \\  
+      \dot{\hat{e}}_{Ck_{23}}= \frac{\hat{q}_{rp_{23}}}{C_k}(6 y_4 +0.1)/(1.667*10^{-8}) \\
+    r_{RO2_3} = y_5 -  \hat{e}_{Ck_{23}}\\" border="0"/></p>
+
+
+
+<p><img src="http://latex.codecogs.com/gif.latex?r_{RO3_1}: \\
+  \hat{R}_{memb_{31}} =0.202 (4.137*10^{11}(\frac{\hat{e}_{Ck_{31}}-12000}{165}+29)) \\
+\hat{q}_{rp_{31}} = \frac{\hat{p}_{tr_{31}}-\hat{p}_{memb_{31}}}{R_{forward}} \\
+\dot{\hat{p}}_{tr_{31}} = \frac{1}{C_{tr}} (  y_3 - \hat{q}_{rp_{31}} ) \\
+  \dot{\hat{p}}_{memb_{31}} = \frac{1}{{C_{memb}}} ( \hat{q}_{rp_{31}}  - \frac{{\hat{p}}_{memb_{31}}}{\hat{R}_{memb_{31}}}  - \frac{{\hat{p}}_{memb_{31}} }{R_{return_{ASE}}})\\
+    \dot{\hat{e}}_{Cbrine_{31}} =  \frac{1}{1.667 * 10^{-8} C_{brine}  } ( \frac{ \hat{p}_{memb_{31}} }{R_{return_{ASE}}  } )\\
+    \dot{\hat{e}}_{Ck_{31}}= \frac{\hat{q}_{rp_{31}}}{C_k}(6 \hat{e}_{Cbrine_{31}}+0.1)/(1.667*10^{-8}) \\
+     r_{RO3_1} = y_4 - \hat{e}_{Cbrine_{31}}\\" border="0"/></p>
+
+<p><img src="http://latex.codecogs.com/gif.latex?r_{RO3_2}: \\
+      \dot{\hat{q}}_{fp_{32}}= \frac{1}{I_{fp}}(-R_{fp}\hat{q}_{fp_{32}}- y_1 +u_1) \\
+      r_{RO3_2} = y_3 - \hat{q}_{fp_{32}}" border="0"/></p>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
